@@ -16,7 +16,8 @@ class StackLayoutExample(StackLayout):
     def __init__(self, **kwargs):
         super().__init__(**kwargs)
         for i in range(0, 10):
-            size = dp(100) + i * 10
+            # size = dp(100) + i * 10
+            size = dp(100)
             b = Button(
                 text=str(i + 1), size_hint=(None, None), size=(size, size))
             self.add_widget(b)
