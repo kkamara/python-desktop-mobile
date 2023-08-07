@@ -1,5 +1,6 @@
 from kivy.app import App
 # from kivy.uix.gridlayout import GridLayout
+from kivy.uix.stacklayout import StackLayout
 from kivy.uix.anchorlayout import AnchorLayout
 from kivy.uix.boxlayout import BoxLayout
 from kivy.uix.button import Button
@@ -9,6 +10,12 @@ https://www.youtube.com/watch?v=l8Imtec4ReQ
 Kivy Course - Create Python Games and Mobile Apps
 00:13:31
 '''
+
+class StackLayoutExample(StackLayout):
+    def __init__(self, **kwargs):
+        super().__init__(**kwargs)
+        b = Button(text='Z', size_hint=(.2, .2))
+        self.add_widget(b)
 # class GridLayoutExample(GridLayout):
 #     pass
 
