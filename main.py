@@ -15,6 +15,7 @@ Kivy Course - Create Python Games and Mobile Apps
 class StackLayoutExample(StackLayout):
     def __init__(self, **kwargs):
         super().__init__(**kwargs)
+        self.orientation = 'lr-bt'
         for i in range(0, 10):
             # size = dp(100) + i * 10
             size = dp(100)
