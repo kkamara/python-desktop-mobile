@@ -9,7 +9,7 @@ from kivy.uix.widget import Widget
 '''
 https://www.youtube.com/watch?v=l8Imtec4ReQ
 Kivy Course - Create Python Games and Mobile Apps
-00:13:31
+01:07:10
 '''
 
 class StackLayoutExample(StackLayout):
