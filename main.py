@@ -9,7 +9,8 @@ Kivy Course - Create Python Games and Mobile Apps
 '''
 
 class BoxLayoutExample(BoxLayout):
-    def __init__(self, **kwargs):
+    pass
+'''    def __init__(self, **kwargs):
         super().__init__(**kwargs)
         # self.orientation = 'vertical'
         b1 = Button(text='A')
@@ -18,7 +19,7 @@ class BoxLayoutExample(BoxLayout):
         self.add_widget(b1)
         self.add_widget(b2)
         self.add_widget(b3)
-        
+'''
 class MainWidget(Widget):
     pass
 
