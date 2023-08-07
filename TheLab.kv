@@ -5,12 +5,12 @@ AnchorLayoutExample:
     anchor_x: 'center'
     # bottom, top, center
     anchor_y: 'top'
-    Button:
-        text: 'A'
+    BoxLayout:
         size_hint: .2, .2
-    Button:
-        text: 'B'
-        size_hint: .1, .1
+        Button:
+            text: 'A'
+        Button:
+            text: 'B'
 
 <BoxLayoutExample>:
     orientation: 'horizontal'
