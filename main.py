@@ -14,24 +14,24 @@ Kivy Course - Create Python Games and Mobile Apps
 '''
 
 class WidgetsExample(GridLayout):
-    count_disabled = False
+    count_enabled = False
     count = 1
     my_text = StringProperty('1')
     def __init__(self, **kwargs):
         super().__init__(**kwargs)
     def on_button_click(self, button_widget):
         print('Button clicked')
-        if self.count_disabled == False:
+        if self.count_enabled == False:
             self.count += 1
             self.my_text = str(self.count)
     def on_toggle_button_state(self, toggle_button_widget):
         print('toggle state :', toggle_button_widget.state)
         if toggle_button_widget.state == 'normal':
             toggle_button_widget.text = 'OFF'
-            self.count_disabled = False
+            self.count_enabled = False
         elif toggle_button_widget.state == 'down':
             toggle_button_widget.text = 'ON'
-            self.count_disabled = True
+            self.count_enabled = True
 class StackLayoutExample(StackLayout):
     def __init__(self, **kwargs):
         super().__init__(**kwargs)
