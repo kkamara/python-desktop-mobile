@@ -1,6 +1,6 @@
 from kivy.app import App
 from kivy.metrics import dp
-# from kivy.uix.gridlayout import GridLayout
+from kivy.uix.gridlayout import GridLayout
 from kivy.uix.stacklayout import StackLayout
 from kivy.uix.anchorlayout import AnchorLayout
 from kivy.uix.boxlayout import BoxLayout
@@ -11,6 +11,12 @@ https://www.youtube.com/watch?v=l8Imtec4ReQ
 Kivy Course - Create Python Games and Mobile Apps
 01:07:10
 '''
+
+class WidgetsExample(GridLayout):
+    def __init__(self, **kwargs):
+        super().__init__(**kwargs)
+    def on_button_click(self):
+        print('Button clicked')
 
 class StackLayoutExample(StackLayout):
     def __init__(self, **kwargs):
