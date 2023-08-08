@@ -17,6 +17,7 @@ class WidgetsExample(GridLayout):
     count_enabled = BooleanProperty(False)
     count = 1
     my_text = StringProperty('1')
+    text_input_str = StringProperty('foo')
     # slider_value_txt = StringProperty('50')
     def __init__(self, **kwargs):
         super().__init__(**kwargs)
@@ -39,6 +40,9 @@ class WidgetsExample(GridLayout):
     # def on_slider_value(self, slider_widget):
     #     print('Slider :', str(slider_widget.value))
     #     # self.slider_value_txt = str(int(slider_widget.value))
+    def on_text_validate(self, text_input_widget):
+        self.text_input_str = text_input_widget.text
+
 class StackLayoutExample(StackLayout):
     def __init__(self, **kwargs):
         super().__init__(**kwargs)

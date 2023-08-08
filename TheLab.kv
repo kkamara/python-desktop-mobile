@@ -43,8 +43,9 @@ WidgetsExample:
         width: '100dp'
         text: 'foo'
         multiline: False
+        on_text_validate: root.on_text_validate(self)
     Label:
-        text: my_text_input.text
+        text: 'Your name is ' + root.text_input_str
 
 <PageLayoutExample@PageLayout>:
     MainWidget:
