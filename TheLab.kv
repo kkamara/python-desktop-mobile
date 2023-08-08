@@ -1,8 +1,14 @@
 #:kivy 2.2.1
 #:set s dp(150)
-CanvasExample1:
+CanvasExample2:
 
-<CanvasExample1>:
+<CanvasExample2>:
+    canvas:
+        Line:
+            points: (self.center_x, 0, self.center_x, self.top)
+            width: 2
+
+<CanvasExample>:
     canvas:
         Rectangle: 
             pos: self.center_x - s / 2, self.center_y - s / 2
