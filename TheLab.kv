@@ -23,13 +23,13 @@ WidgetsExample:
         size_hint: None, 1
         width: '100dp'
     Slider:
-        disabled: my_switch.active == False
         id: my_slider
         min: 0
         max: 100
         value: 50
         # on_value: root.on_slider_value(self)
         orientation: 'vertical'
+        disabled: not my_switch.active
     Label:
         text: str(int(my_slider.value))
 
