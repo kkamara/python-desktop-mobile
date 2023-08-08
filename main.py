@@ -18,7 +18,7 @@ class WidgetsExample(GridLayout):
     my_text = StringProperty('1')
     def __init__(self, **kwargs):
         super().__init__(**kwargs)
-    def on_button_click(self):
+    def on_button_click(self, button_widget):
         print('Button clicked')
         self.count += 1
         self.my_text = str(self.count)
