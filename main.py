@@ -32,6 +32,9 @@ class WidgetsExample(GridLayout):
         elif toggle_button_widget.state == 'down':
             toggle_button_widget.text = 'ON'
             self.count_enabled = True
+    def on_switch_active(self, switch_button_widget):
+        print(
+            'switch button :', str(switch_button_widget.active))
 class StackLayoutExample(StackLayout):
     def __init__(self, **kwargs):
         super().__init__(**kwargs)
