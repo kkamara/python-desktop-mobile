@@ -7,9 +7,7 @@ from kivy.uix.anchorlayout import AnchorLayout
 from kivy.uix.boxlayout import BoxLayout
 from kivy.uix.button import Button
 from kivy.uix.widget import Widget
-# from kivy.lang import Builder
 
-# Builder.load_file('TheLab.kv')
 
 '''
 https://www.youtube.com/watch?v=l8Imtec4ReQ
@@ -17,11 +15,15 @@ Kivy Course - Create Python Games and Mobile Apps
 01:37:34
 '''
 
-class MainWidget(App):
+class TheLabApp(App):
+    '''
+    Mainclass must be in this format.
+    TheLabApp for TheLab.kv
+    '''
     pass
 
-class CanvasExample1(Widget):
+class CanvasExample1(BoxLayout):
     pass
 
 if __name__ == "__main__":
-    MainWidget().run()
+    TheLabApp().run()
