@@ -6,7 +6,8 @@
         {
             "label": "pushTo",
             "type": "shell",
-            "command": "./pushTo.sh"
+            "command": "./pushTo.sh",
+            "problemMatcher": []
         }
     ]
 }
