@@ -10,7 +10,7 @@ from kivy.uix.widget import Widget
 '''
 https://www.youtube.com/watch?v=l8Imtec4ReQ
 Kivy Course - Create Python Games and Mobile Apps
-01:25:41
+01:37:34
 '''
 
 class WidgetsExample(GridLayout):
