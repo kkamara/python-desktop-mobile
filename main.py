@@ -22,7 +22,7 @@ class TheLabApp(App):
     '''
     pass
 
-class CanvasExample1(BoxLayout):
+class CanvasExample1(Widget):
     pass
 
 if __name__ == "__main__":
