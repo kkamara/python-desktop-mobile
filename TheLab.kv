@@ -17,10 +17,13 @@ WidgetsExample:
         font_size: '80dp'
         color: 1, .5, 1, 1
     Switch:
+        id: my_switch
         on_active: root.on_switch_active(self)
+        active: True
         size_hint: None, 1
         width: '100dp'
     Slider:
+        disabled: my_switch.active == False
         id: my_slider
         min: 0
         max: 100
