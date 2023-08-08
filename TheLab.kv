@@ -23,9 +23,11 @@ WidgetsExample:
     Slider:
         min: 0
         max: 100
-        value: 50
+        value: root.slider_value_text
         on_value: root.on_slider_value(self)
         orientation: 'vertical'
+    Label:
+        text: root.slider_value_text
 
 <PageLayoutExample@PageLayout>:
     MainWidget:
