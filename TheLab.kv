@@ -37,6 +37,13 @@ WidgetsExample:
         ProgressBar:
             max: 100
             value: my_slider.value
+    TextInput:
+        id: my_text_input
+        size_hint: None, 1
+        width: '100dp'
+        text: 'foo'
+    Label:
+        text: my_text_input.text
 
 <PageLayoutExample@PageLayout>:
     MainWidget:
