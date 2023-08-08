@@ -22,6 +22,8 @@ class WidgetsExample(GridLayout):
         print('Button clicked')
         self.count += 1
         self.my_text = str(self.count)
+    def on_toggle_button_state(self, toggle_button_widget):
+        print('toggle state :', toggle_button_widget.state)
 
 class StackLayoutExample(StackLayout):
     def __init__(self, **kwargs):
