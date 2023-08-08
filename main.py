@@ -1,5 +1,6 @@
 from kivy.app import App
 from kivy.metrics import dp
+from kivy.properties import StringProperty
 from kivy.uix.gridlayout import GridLayout
 from kivy.uix.stacklayout import StackLayout
 from kivy.uix.anchorlayout import AnchorLayout
@@ -13,10 +14,11 @@ Kivy Course - Create Python Games and Mobile Apps
 '''
 
 class WidgetsExample(GridLayout):
+    my_number = StringProperty('0')
     def __init__(self, **kwargs):
         super().__init__(**kwargs)
     def on_button_click(self):
-        print('Button clicked')
+        self.my_number = str(int(self.my_number) + 1)
 
 class StackLayoutExample(StackLayout):
     def __init__(self, **kwargs):
