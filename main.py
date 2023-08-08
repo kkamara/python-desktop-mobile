@@ -14,11 +14,14 @@ Kivy Course - Create Python Games and Mobile Apps
 '''
 
 class WidgetsExample(GridLayout):
-    my_number = StringProperty('0')
+    count = 1
+    my_text = StringProperty('1')
     def __init__(self, **kwargs):
         super().__init__(**kwargs)
     def on_button_click(self):
-        self.my_number = str(int(self.my_number) + 1)
+        print('Button clicked')
+        self.count += 1
+        self.my_text = str(self.count)
 
 class StackLayoutExample(StackLayout):
     def __init__(self, **kwargs):
